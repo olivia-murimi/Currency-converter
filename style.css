@@ -9,12 +9,14 @@ body{
     padding: 0;
 }
 .container{
-    background-color:aqua;
+    background-color:black;
     color: aliceblue;
     padding: 10px;
     border-radius: 5px;
 }
 .currency-container{
     padding: 20px;
-    
+    display: flex;
+    justify-content: space-between;
+
 }
