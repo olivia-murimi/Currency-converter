@@ -7,3 +7,10 @@ const currencySecondEl = document.getElementById("currency-sirst");
 const worthSecondEl = document.getElementById("worth-second")
 
 const exchangeRateEl = document.getElementById("exchange-rate")
+
+function updateRate(){
+
+}
+
+
+currencyFirstEl.addEventListener("change", updateRate)
