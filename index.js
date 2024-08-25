@@ -14,3 +14,7 @@ function updateRate(){
 
 
 currencyFirstEl.addEventListener("change", updateRate)
+
+currencySecondEl.addEventListener("change", updateRate)
+
+worthFirstEl.addEventListener("input", updateRate)
