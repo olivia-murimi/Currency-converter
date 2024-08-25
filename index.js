@@ -9,7 +9,7 @@ const worthSecondEl = document.getElementById("worth-second")
 const exchangeRateEl = document.getElementById("exchange-rate")
 
 function updateRate(){
- console.log("called")
+ fetch (`https://v6.exchangerate-api.com/v6/c7dfc4f7c2eacd2aef4355dd`)
 }
 
 
