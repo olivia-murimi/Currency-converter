@@ -10,7 +10,7 @@ const exchangeRateEl = document.getElementById("exchange-rate")
 
 function updateRate(){
  fetch (`https://v6.exchangerate-api.com/v6/c7dfc4f7c2eacd2aef4355dd/latest/${currencyFirstEl.value}`
-
+   const rate = data.conversion_rates[]
  )
  .then((res)=>res.json())
  .then((data)=>
