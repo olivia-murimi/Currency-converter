@@ -1,15 +1,15 @@
 const currencyFirstEl = document.getElementById("currency-first");
 
-const worthFirstEl = document.getElementById("worth-first")
+const worthFirstEl = document.getElementById("worth-first");
 
-const currencySecondEl = document.getElementById("currency-sirst");
+const currencySecondEl = document.getElementById("currency-second");
 
-const worthSecondEl = document.getElementById("worth-second")
+const worthSecondEl = document.getElementById("worth-second");
 
-const exchangeRateEl = document.getElementById("exchange-rate")
+const exchangeRateEl = document.getElementById("exchange-rate");
 
-updateRate()
-function updateRate(){
+updateRate();
+function updateRate() {
  fetch (`https://v6.exchangerate-api.com/v6/c7dfc4f7c2eacd2aef4355dd/latest/${currencyFirstEl.value}`
  )
  .then((res)=>res.json())
@@ -20,7 +20,7 @@ function updateRate(){
 
     }`;
 
-    worthSecondEl.value = (worthFirstEl.value * rate).to Fixed(3)
+    worthSecondEl.value = (worthFirstEl.value * rate).toFixed(3)
  });
 }
 
