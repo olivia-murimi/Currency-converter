@@ -15,6 +15,7 @@ function updateRate(){
  .then((data)=> {
     const rate = data.conversion_rates[currencySecondEl.value];
     console.log(rate);
+    exchangeRateEl.innerText = `1 ${currencyFirstEl.value} = ${currencySecondEl.value}`;
  });
 }
 
